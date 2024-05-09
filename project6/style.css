@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #111827;
+    font-family: 'poppins';
+    color: white;
+}
+body{
+    border: 5px solid white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 2% 2%;
+}
+nav ul{
+    width: 80%;
+    justify-content: end;
+    display: flex;
+}
+nav ul li a{
+    text-decoration: none;
+}
+.home {
+    padding: 10% 20%;
+    background-color:#6464e0;
+    border-radius: 16px;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 2%;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.first-left{
+    display: flex;
+    flex-direction: column;
+}
+.first-left h1{
+    font-size: 2em;
+}
+.first-left img{
+    margin-right: 5%;
+    max-width: 25px;
+}
+.first-left p{
+    color: rgb(246, 221, 78);
+    font-weight: 600;
+}
+.first-left div{
+    display: flex;
+}
+.first-right{
+    width: 30%;
+}
+.second h2{
+    justify-self: center;
+    text-align: center;
+    text-decoration: 2px blue underline;
+    font-weight: 600;
+}
+.boxes img{
+    width: 250px;
+}
+.boxes{
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+}
+.firsti,.secondi,.thirdi,.fourthi{
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer{
+    margin-top: 30px;
+    justify-self: center;
+    text-align: center;
+}
+footer h2{
+    text-decoration: 2px blue underline;
+}
+footer div{
+    margin: 15px;
+}
+footer div img{
+    width: 30px;
+}
+@media(max-width: 300px){
+
+}
+@media(max-width: 600px){
+    nav{
+        display: none;
+    }
+    main{
+        margin-top: 15%;
+    }
+    .first{
+        flex-direction: column;
+    }
+    .first-left{
+        justify-content: center;
+        text-align: center;
+    }
+    .first-left div{
+        justify-content: center;
+    }
+    .first-right{
+        margin: 7% 0;
+        width: 75%;
+    }
+    .boxes{
+        display: grid;
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media( max-width: 768px){
+    .first-right{
+        margin: 7% 0;
+        width: 50%;
+    }
+    .boxes img{
+        width: 200px;
+    }
+    .first{
+        margin: 0 20%;
+    }
+}
+
+

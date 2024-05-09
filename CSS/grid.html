@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .cont{
+            border: 3px solid black;
+            height: 1200px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);/*1fr means one fraction unit*/
+            grid-template-rows: repeat(4,1fr); 
+        }
+        /* .box{
+             height: 100px;
+            width: 100px; 
+        }*/
+        .box1{
+            background-color: red;
+            border: 1px solid black;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2{
+            background-color: yellow;
+            border: 1px solid black;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .box3{
+            background-color: green;
+            border: 1px solid black;
+        }
+        .box4{
+            background-color: red;
+            border: 1px solid black;
+        }
+        .box5{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .box6{
+            background-color: green;
+            border: 1px solid black;
+        }
+        .box7{
+            background-color: red;
+            border: 1px solid black;
+        }
+        .box8{
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        .box9{
+            background-color: green;
+            border: 1px solid black;
+        }
+        .child{
+            background-color: black;
+            border: 2px solid white;
+            width: 200px;
+            height: 200px;   
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: end;   
+            justify-items: center; 
+        }
+    </style>
+</head>
+<body>
+    <!--grid is ued to put different parts of the website like a table-format.-->
+    <!--
+        grid-template-columns = it defines the number of columns we want and the width of each column. in the grid layout.
+        => fr = fraction unit.
+        => repeat(count,1fr)
+        =>minmax(min value,max value)
+
+        grid-template-rows =  used to define the number of rows and their height.
+
+        grid-template-area = areaname(elementname) areaname areaname areaname ..... 
+
+        grid-template = rows columns areas.
+    
+        gap/colomn/row-gap = gap between elements.
+    
+        align-items = start,end,centre vertically.
+
+        justify-items= horizontally .
+
+        68/
+        justify self = it is used to put element along x axis.
+
+        align self = it is used to put element along y axis.
+
+        place self = align+justify .
+
+        place items = align+justify .
+
+        grid-column/row-start/end = used for merging row/colims cels.
+    --> 
+    <div class="cont">
+        <div class="box box1"></div>
+        <div class="box box2 container">
+            <div class="child one"></div>
+            <div class="child two"></div>
+            <div class="child three"></div>
+        </div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/*universal selector*/
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*element selector*/
+h1{
+    color: brown;
+    background-color: aqua;
+}
+/* p{
+    font-size: 54px;
+} */
+
+/*class selector*/
+.para{
+    color: blue;
+    font-size: 24px;
+    background-color: aquamarine;
+    border: 10px solid black;
+}
+
+/*ID selector*/
+#para{
+    color: rgb(5, 70, 25);
+    font-size: 24px;
+    background-color: rgb(255, 232, 127);
+    border: 10px solid black;
+}
+
+/*selector list*/
+h2,h3,.para2,#para3{
+    background-color: chocolate;
+    font-style: italic;
+}
+
+/*descendent selector*/
+main p{
+    color: red;
+}
+
+/*child selector*/
+h1>p{
+    color: cornflowerblue;
+}
+
+/*adjecent selector*/
+section + p{
+    color:pink;
+}
+
+/*general sibling selector*/
+section ~ p{
+    color: yellow;
+}
+
+/*attribute selector*/
+[target="_blank"]{
+    text-decoration: none;
+    color: darkorchid;
+}

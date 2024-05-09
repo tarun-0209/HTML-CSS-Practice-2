@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        @media(max-width:600px){/*phones*/
+            body{
+                background-color: red;
+            }
+        }
+        @media(min-width:600px){/*portrait tablets and large phones*/
+            body{
+                background-color: green;
+            }
+        }
+        @media(min-width:768px){/*landscape tablets*/
+            body{
+                background-color: blue;
+            }
+        }
+        @media(min-width:992px){/*laptops/desktops*/
+            body{
+                background-color: yellow;
+            }
+        }
+        @media(min-width:1200px){/*large laptops/desktops*/
+            body{
+                background-color: black;
+            }
+        }
+        .float{
+            height: 1000px;
+            width: 100px;
+            background-color: orange;
+            /* float:left; */
+        }
+        .box{
+            height: 1000px;
+            width: 100px;
+            background-color: rgb(34, 0, 255);
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .overflow{
+            width: 300px;
+            height: 500px;
+            border: 2px solid black;
+            overflow: auto;
+        }
+        .box1{
+            background-color: darkblue;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 33px;
+            top: 100px;
+            z-index: 2;
+        }
+        .box2{
+            background-color: palevioletred;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            
+        }
+        .box3{
+            background-color: rgb(230, 238, 79);
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 66px;
+            bottom: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <!--media queries helps to apply different kind of css based on the type of device used. they help us mak responsive designs for websites.-->
+    
+    <!--types of css layouts - 
+    normal flow = by default.
+    float = the item will be placed at the specified position like left,right,custom value,inside that container.
+    position = static = by default, fixed = fixed wrt  body's top&left, relative  = wrt parent container ,absolute = wrt body but not fixed.
+    flex = 
+    grid = -->
+
+    <!-- float -->
+    <div class="float"></div>
+    <div class="position">
+        <div class="box"></div>
+    </div>
+    <br>
+    <br><br>
+    <br><br><br><br>
+    <div class="overflow"><!--when the content goes outside the allowed space-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem molestiae voluptatem perferendis rem, id quia, facere velit labore nostrum voluptate nihil consequatur natus deserunt? Delectus corrupti id debitis cupiditate, odio minima, repellat dolor illum temporibus facere laboriosam pariatur modi aliquam sequi mollitia cum architecto! Corrupti magni magnam repudiandae tenetur voluptatem? Quia quam incidunt iste hic reprehenderit accusantium iure unde. Tenetur assumenda nemo ipsum corrupti suscipit architecto, laboriosam similique debitis porro ratione placeat tempore non dolores unde, at pariatur culpa beatae eaque. Sunt, voluptatem sequi, corrupti modi eveniet impedit unde dolore inventore dolor assumenda asperiores dolores eos a, libero consequatur? Assumenda! Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque atque omnis earum distinctio, mollitia quas illo quidem in quis magni voluptatibus nulla perspiciatis enim repellendus odio dolores soluta praesentium inventore. In, aliquam labore! Ex exercitationem doloremque itaque blanditiis nemo, voluptas sit similique! Temporibus optio iure eveniet accusantium, dicta ducimus corrupti ex. Porro quasi sit aut maxime, labore enim. Corporis perferendis sit quia itaque aut, aspernatur animi fugit praesentium odio accusantium quaerat sunt recusandae qui beatae voluptatem omnis illum quis tenetur laudantium? Sed repellat, quae molestiae illo eos explicabo sunt saepe incidunt, doloremque iusto excepturi earum quo adipisci aspernatur facilis voluptas.</p>
+    </div>
+    <br><br><br><br>
+    <!-- z-index = higher=>higher priority. by default it is 1 for all elements. latest element has higher priority than recent .-->
+    <div class="cont">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+    
+
+
+</body>
+</html>

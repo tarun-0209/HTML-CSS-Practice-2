@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .cont{
+            border: 2px solid black;
+            display: flex;
+            /* flex-direction:row; */
+            /* flex-wrap: wrap; 
+            height: 1000px; */
+            /* justify-content: space-evenly; */ /*works wrt x-axis*/
+            /* align-items:center;*/ /* works on y-axis */
+            /* align-content:center; */
+            /* gap: 100px; */
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+        }
+        .box1{
+            background-color: red;
+            /* order: 1; */
+            /* flex-grow: 1; */
+            /* flex-shrink: 1; */
+            /* align-self: center; */
+        }
+        .box2{
+            background-color: rgb(106, 82, 82);
+            /* order: -1; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 1; */
+            /* align-self: flex-end; */
+        }
+        .box3{
+            background-color: rgb(246, 255, 0);
+        }
+        .box4{
+            background-color: rgb(255, 187, 0);
+        }
+        .box5{
+            background-color: rgb(0, 255, 128);
+        }
+        .box6{
+            background-color: rgb(37, 81, 14);
+        }
+        .box7{
+            background-color: rgb(119, 0, 255);
+        }
+        .box8{
+            background-color: rgb(0, 247, 255);
+        }
+        .box9{
+            background-color: rgb(255, 0, 187);
+        }
+        .box10{
+            background-color: rgb(174, 0, 255);
+        }
+        .box11{
+            background-color: rgb(255, 183, 0);
+        }
+        .box12{
+            background-color: rgb(2, 3, 0);
+        }
+    </style>
+</head>
+<body>
+    <!--flexbox = it helps to put our elements into rows or columns (only) properly . -->.
+    
+    <!--some properties of flex-container are -
+        display = flex => all the items will be adjusted horizontally in a single line
+        flex-direction = we can specify the direction of flex. direction is row by default.
+        flex-wrap = now the elements will take their original dimensions even if we change screen size.(responsive )
+        flew-flow = flex-direction flex-typeOfWrap;
+        justify-content = used to adjust extra space inside the container by provide responsive spacing between the elements. works on x-axis.
+        align-items = similar to justify-content but works in y-direction.used when there is only one row/column.
+        align-content  = similar to align-items. used when there are multiple rows/column.(used with flex-wrap:wrap)
+        gap = provides row/column gap between the elements -->
+        <div class="cont">
+            <div class="box box1">box 1</div>
+            <div class="box box2">box 2</div>
+            <div class="box box3">box 3</div>
+            <div class="box box4">box 4</div>
+            <div class="box box5">box 5</div>
+            <div class="box box6">box 6</div>
+            <div class="box box7">box 7</div>
+            <div class="box box8">box 8</div>
+            <div class="box box9">box 9</div>
+            <div class="box box10">box 10</div>
+            <div class="box box11">box 11</div>
+            <div class="box box12">box 12</div>
+        </div>
+
+        <!--while applying stretch properties we cant define height and width for the elements becaue it will over ride them.-->
+
+        <!--some properties of flex-items are - 
+            order = to put the elements in a required order. by default the order is 0 for all elements . (increasing order + and multiple elements can have same values ).
+            flex-grow = it will stretch the elements horizontally based on its value and adjust size automatically.
+            flex-shrink = when we decrease the size of the screen then, the elements will shrink in the order they are given value of shrink.
+            flex-basis = to give individual size to elements.
+            flex = flex-grow flex-shrink flex-basis
+            align-self = used to place individual element along y-axis .--> 
+</body>
+</html>

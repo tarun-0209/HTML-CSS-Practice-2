@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+     <style>
+      div{
+         padding: 10px 10px 10px 10px;
+         border: 2px solid black;
+         margin: 20px;
+      }
+     </style>
+</head>
+<body>
+    <!--inline- written inside the tags ,
+        internal- written inside the head tag. and
+        external css- some style.css file is linked in the head part. -->
+    
+    <!--Selectors in css = different ways in which how css is applied to the html elements.
+        Simple Selectors = universal, element, class, id, selector list -->
+    
+        <!--universal selector = css properties which we want to apply on the whole page.-->
+
+        <!--element selector = applied using element name. eg- h1,form,div.-->
+        <h1>TARUN PUROHIT</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, atque?</p>
+        <br>
+        <br>
+        <!--class selector = applied using .classname. we can also have multiple class names for an element-->
+        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, officiis eaque commodi dolor, fuga sint et odit molestiae accusantium libero tempore explicabo modi laudantium aliquid harum architecto maxime quos? Aperiam!</p>
+        <br>
+         <!--ID selector = applied using #IDname. id name should be unique.-->
+         <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, officiis eaque commodi dolor, fuga sint et odit molestiae accusantium libero tempore explicabo modi laudantium aliquid harum architecto maxime quos? Aperiam!</p>
+        <br>
+         <!--selector list = we can put multiple class,id,element, names and apply css at once.-->
+         <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, repellendus?</h2>
+         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque error similique earum quaerat quos praesentium.</h3>
+         <p class="para2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, perspiciatis!</p>
+         <p id="para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel fugiat corrupti ab neque. Dignissimos!</p>
+
+         <!--PART 2-->
+
+         <!--descendent selector = css is applied to the element who is a child element.-->
+         <h1>tarun1</h1>
+         <main>
+            <h1>tarun2</h1>
+         </main>
+         <br>
+         
+         <!--child selector = similar to descendant selector. -->
+         <h1>
+            <p>tarun3</p>
+         </h1>
+         <br>
+         
+         <!--adjcent sibling = to select the element immidately after the element where we are applying css.-->
+         <section>
+            <p>hello1</p>
+         </section>
+         <p>hello2</p>
+         <br>
+
+         <!--general sibling selector = to apply css to all the elements that are same as the type of element just after the parent element.-->
+         <section>
+            <p>hello1</p>
+         </section>
+         <p>hello2</p>
+         <p>hello3</p>
+         <p>hello4</p>
+         <span>hello5</span>
+         <br>
+         <!--attribute selector = css applied using attriblue inside []-->
+         <a href="google.com" target="_blank" >google</a>
+         <br>
+         <!-- box model - 
+            content->padding->border->margin -->
+            <div>CONTENT>PADDING>BORDER>MARGIN</div>
+</body>
+</html>

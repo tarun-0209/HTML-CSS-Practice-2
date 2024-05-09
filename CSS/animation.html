@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        div{
+            height: 150px;
+            width: 150px;
+            background-color: rebeccapurple;
+            border: 2px solid black;
+            position: relative;
+            /* animation-name: xyzname;
+            animation-duration: 9s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            animation-timing-function: ease; */
+            animation: xyzname 9s 2s 3 alternate-reverse ;
+        }
+        .box1{
+            animation-timing-function: linear;
+        }
+        .box2{
+            animation-timing-function: ease-in;
+        }
+        .box3{
+            animation-timing-function: ease-in-out;
+        }
+        .box4{
+            animation-timing-function: ease-out;
+        }
+        @keyframes xyzname{
+            0% {
+                background-color: green;
+                top : 0px;
+                left : 0px;
+            }
+            25% {
+                background-color: yellow;
+                top : 0px;
+                left : 200px;
+            }
+            50%{
+                background-color: red;
+                top:200px;
+                left:200px;
+            }
+            75%{
+                background-color: black;
+                top: 200px;
+                left:0px;
+            }
+            100%{
+                background-color: pink;
+                top:0px;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="anim box1">BOX 1</div>
+    <div class="anim box2">BOX 2</div>
+    <div class="anim box3">BOX 3</div>
+    <div class="anim box4">BOX 4</div>
+</body>
+</html>

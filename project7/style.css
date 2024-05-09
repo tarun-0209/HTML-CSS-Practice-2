@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    color: white;
+    
+}
+body{
+    background-color: rgb(12, 11, 11);
+    display: flex;
+    flex-direction: column;
+    margin: 2% 12.5%;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em;   
+}
+nav ul li{
+    list-style: none;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.headerleft{
+    display: flex;
+    justify-self: flex-start;
+    align-items: start;
+    width: 45%;
+}
+.headerleft .navheadphone{
+    margin-top: -35%;
+    margin-left: 20%;
+    width:50%;
+    height: 120%;
+}
+.headerleft .logo{
+    margin-top: -15%;
+}
+.headerright{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.headerright nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerright nav ul button{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px 35px;
+    background-color: #1e1e21;
+    border-radius: 7px;
+}
+.headerright img{
+    width: 70%;
+    align-self: center;
+    margin: 10% 0 5% 0;
+}
+.headerright h1{
+    font-size: 3em;
+    font-weight:900;
+}
+.headerright h2{
+    margin: 5% 0;
+}
+.headerright .aboutnew{
+    line-height: 2rem;
+}
+.headerightbutton img{
+    max-width: 10%;
+}
+.headerightbutton{
+    border-radius: 7px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    background-color: #1e1e21;
+    justify-content: space-around;
+    padding: 0 2%;
+    margin: 3% 0;
+}
+.headphoneinfo{
+    margin-left: 10%;
+}
+
+.company{
+    margin: 5% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.specs{
+    display: flex;
+    flex-direction: column;
+}
+.specslogo{
+    align-self: center;
+    margin-bottom: 5%;
+}
+.mainspecs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.fourspecs{
+    display: flex;
+    flex-direction: column;
+}
+.fourspecs div{
+    margin: 12% 0;
+}
+.fourspecs .shift{
+    margin-left: -20%;
+}
+.mainspecs .specsphones{
+    width: 28%;
+    height: 28%;
+}
+.caselogo{
+    margin: 7% 0;
+    align-self: center;
+}
+.case{
+    display: flex;
+    flex-direction: column;
+}
+.casemain{
+    display: flex;
+    justify-content: center;
+    gap: 7%;
+    align-items: center;
+}
+.caseright p{
+    line-height: 1.5em;
+}
+.casebutton{
+    margin: 15% 0;
+    display: flex;
+    padding: 10px 0px;
+    border-radius: 7px;
+    background-color: #1e1e21;
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    align-items: center;
+    border: none;
+    font-weight: 500;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8% 0;
+    background-color:#1e1e21;
+    border-radius: 7px;
+    padding: 3% 20%;
+}
+
+.bannerleft{
+    display: flex;
+    flex-direction: column;
+}
+.bannerleft h1{
+    margin-bottom: 12%;
+}
+.bannerbutton{
+    padding: 10px 0px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    background-color: black;
+    width: 70%;
+    margin-top: 12%;
+    display: flex;
+}
+.productlogo{
+    margin: 10% 0;
+    align-self: center;
+}
+.Products{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 33%;
+}
+
+.productsmain{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 25%;
+}
+.productsmain .productphone{
+    padding: 5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    background-color: #1e1e21;
+    border-radius: 7px;
+}
+.productimg{
+    width: 60%;
+    margin-top: -120px;
+}
+.productbutton{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 50%;
+}
+.productbutton img{
+    background-color: black;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+footer li{
+    list-style: none;
+    line-height: 2em;
+}
+.flogo{
+    align-self: start;
+}
+.email{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.email .sub{
+    padding: 10px 25px;
+    display: flex;
+    height: 10%;
+    justify-content: space-between;
+    margin-bottom: 10%;
+    align-items: center;
+    background-color:#1e1e21;
+    border-radius: 7px;
+}
+.subsub{
+    background-color: black;
+    padding: 8px 14px;
+    border-radius: 7px;
+}
+.social ul{
+    display: flex;
+}
+.social ul li{
+    margin-right: 10%;
+}
